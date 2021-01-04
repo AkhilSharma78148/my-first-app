@@ -13,7 +13,6 @@ export class ServersComponent implements OnInit {
 
 	allowNewServer = false;
 
-
   	constructor() {
 		setTimeout(() => { //setTimeout javascript function using ES6 Arrow function
 			this.allowNewServer = true;
@@ -21,7 +20,7 @@ export class ServersComponent implements OnInit {
 
   	}
 
-  	// ngOnInit(): void {
-  	// }
+  	ngOnInit(): void {
+  	}
 
 }
