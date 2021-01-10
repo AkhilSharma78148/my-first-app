@@ -13,4 +13,8 @@ export class ServerComponent implements OnInit {
 	getServerStatus() {
 		return this.serverStatus;
 	}
+
+	ngOnInit(): void {
+  	}
+
 }
