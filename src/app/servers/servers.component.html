@@ -3,7 +3,13 @@
 
 <p>{{ serverCreationStatus }}</p>
 
-<input type="text" name="" value="" (input)="onUpdateServerName($event)">
+<!-- Event binding -->
+<!-- <input type="text" name="" value="" (input)="onUpdateServerName($event)">
+ -->
+<br>
+<!-- Two way binding -> combine Property and Event binding -->
+<input type="text" name="" value="" [(ngModel)]="serverName">
+
 <p>{{ serverName }}</p>
 
 <hr>

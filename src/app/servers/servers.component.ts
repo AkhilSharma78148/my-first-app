@@ -13,7 +13,7 @@ export class ServersComponent implements OnInit {
 
 	allowNewServer = false;
 	serverCreationStatus = 'No new server was created';
-    serverName = '';
+    serverName = 'Test server';
   	constructor() {
 		setTimeout(() => { //setTimeout javascript function using ES6 Arrow function
 			this.allowNewServer = true;
