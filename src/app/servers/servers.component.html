@@ -1,16 +1,17 @@
+<!-- Event binding -->
+<!-- <input type="text" name="" value="" (input)="onUpdateServerName($event)">
+ -->
+<!-- <br> -->
+<!-- Two way binding -> combine Property and Event binding -->
+<input type="text" name="" value="" [(ngModel)]="serverName">
+
+<!-- <p>{{ serverName }}</p> -->
+<br>
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Button</button>
 <p [innerText]="allowNewServer"></p>
 
 <p>{{ serverCreationStatus }}</p>
 
-<!-- Event binding -->
-<!-- <input type="text" name="" value="" (input)="onUpdateServerName($event)">
- -->
-<br>
-<!-- Two way binding -> combine Property and Event binding -->
-<input type="text" name="" value="" [(ngModel)]="serverName">
-
-<p>{{ serverName }}</p>
 
 <hr>
 <app-server></app-server>
