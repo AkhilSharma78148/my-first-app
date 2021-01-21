@@ -15,6 +15,7 @@ export class ServersComponent implements OnInit {
 	serverCreationStatus = 'No new server was created';
     serverName = 'Test server';
     serverCreated = false;
+    servers = ['Testserver', 'Testserver 2'];
   	constructor() {
 		setTimeout(() => { //setTimeout javascript function using ES6 Arrow function
 			this.allowNewServer = true;
@@ -27,6 +28,7 @@ export class ServersComponent implements OnInit {
 
   	onCreateServer() {
         this.serverCreated = true;
+        this.servers.push(this.serverName);
   		this.serverCreationStatus = 'Server was created. Name is '+this.serverName;
   	}
 
