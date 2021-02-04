@@ -11,8 +11,20 @@ Make sure NodeJs nmp(node package manager) already installed on the your system
 		-- Move to project folder
 		> cd my-first-app
 
+
 		## Run the project
 		> ng serve
+
+	//-- install bootstrap in the proect
+		npm install --save bootstrap
+
+		//Bootstrap project linking 
+		Go to C:\xampp\htdocs\Angular\my-first-app\angular.json file then
+		"styles": [
+          "src/styles.css",
+          "node_modules/bootstrap/dist/css/bootstrap.css"
+        ],
+
 
 	//-- Create component using cli
 	1)	ng generate component server
@@ -26,3 +38,6 @@ Make sure NodeJs nmp(node package manager) already installed on the your system
 	2)	<app-servers></app-servers>
 
 
+
+	ng g c cockpit
+	ng g c server-element

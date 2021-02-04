@@ -11,14 +11,18 @@ import { Component } from '@angular/core';
   // `]
 })
 export class AppComponent {
-  name = 'Akhil';
-  username = '';
-  showSecret =  false;
-  log = [];
+    name = 'Akhil';
+    username = '';
+    showSecret =  false;
+    log = [];
 
-  onToggleDetails() {
-  	this.showSecret = !this.showSecret;
-  	// this.log.push(this.log.length + 1);
-  	this.log.push(new Date());
-  }
+    // serverElements = [];
+
+    onToggleDetails() {
+    	this.showSecret = !this.showSecret;
+    	// this.log.push(this.log.length + 1);
+    	this.log.push(new Date());
+    }
+
+    serverElements =[{type:'server',name:'Testserver',content:'Just a test!'}];
 }
